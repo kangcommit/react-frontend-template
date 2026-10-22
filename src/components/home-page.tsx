@@ -1,0 +1,27 @@
+import { ArrowRight } from 'lucide-react'
+
+import { buttonVariants } from '@/components/ui/button'
+
+export function HomePage() {
+  return (
+    <main className="mx-auto flex min-h-svh w-full max-w-5xl flex-col justify-center px-6 py-16">
+      <div className="max-w-2xl space-y-6">
+        <p className="font-medium text-muted-foreground text-sm">React template</p>
+        <h1 className="font-semibold text-4xl tracking-tight sm:text-5xl">
+          A solid foundation for your next product.
+        </h1>
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          Type-safe routing, Tailwind CSS, and source-owned UI components are ready to customize.
+        </p>
+        <a
+          href="https://react.dev/learn"
+          className={buttonVariants({ size: 'lg' })}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Your app starts here <ArrowRight aria-hidden="true" data-icon="inline-end" />
+        </a>
+      </div>
+    </main>
+  )
+}

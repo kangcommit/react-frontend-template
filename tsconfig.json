@@ -1,0 +1,5 @@
+{
+  // Project references keep app and tooling checks separate.
+  "files": [],
+  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
+}

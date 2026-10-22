@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    // Language and runtime for Node-based tooling.
+    "target": "ES2023",
+    "lib": ["ES2023"],
+
+    // Module resolution and tooling types.
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "types": ["node"],
+
+    // Import and module behavior.
+    "allowImportingTsExtensions": true,
+    "moduleDetection": "force",
+    "verbatimModuleSyntax": true,
+
+    // Type safety and dependency checking.
+    "strict": true,
+    "skipLibCheck": true,
+
+    // Type-check only; tooling executes these files.
+    "noEmit": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo"
+  },
+
+  // Vite, Vitest, and Playwright configuration files.
+  "include": ["vite.config.ts", "vitest.config.ts", "playwright.config.ts"]
+}
